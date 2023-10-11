@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=3 uid="uid://dlermxqb6w7km"]
+
+[ext_resource type="Texture2D" uid="uid://wbjbm6olkiy3" path="res://assets/tzKyzs.png" id="1_yvbco"]
+[ext_resource type="PackedScene" uid="uid://dmbb7qd8a15l4" path="res://elements/ground/static_body_2d.tscn" id="2_2773c"]
+[ext_resource type="PackedScene" uid="uid://ml8t4aw2iolt" path="res://elements/wall/wall.tscn" id="3_6a15h"]
+[ext_resource type="PackedScene" uid="uid://csquj0e4s1snv" path="res://elements/groundwall/groundwall.tscn" id="4_u0uou"]
+[ext_resource type="PackedScene" uid="uid://g0imsj5tawpf" path="res://elements/player/player.tscn" id="5_ybj15"]
+
+[node name="game" type="Node2D"]
+
+[node name="TzKyzs" type="Sprite2D" parent="."]
+position = Vector2(616, 361)
+texture = ExtResource("1_yvbco")
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_2773c")]
+position = Vector2(1, 667)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_2773c")]
+position = Vector2(307, 665)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_2773c")]
+position = Vector2(610, 584)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("2_2773c")]
+position = Vector2(887, 509)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("2_2773c")]
+position = Vector2(1078, 370)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("2_2773c")]
+position = Vector2(713, 290)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("2_2773c")]
+position = Vector2(430, 290)
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("2_2773c")]
+position = Vector2(129, 293)
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("2_2773c")]
+position = Vector2(996, 440)
+
+[node name="WallLeft" parent="." instance=ExtResource("3_6a15h")]
+position = Vector2(-81, -16)
+
+[node name="WallRight" parent="." instance=ExtResource("3_6a15h")]
+position = Vector2(1239, -7)
+
+[node name="groundwall" parent="." instance=ExtResource("4_u0uou")]
+position = Vector2(-1, 718)
+
+[node name="player" parent="." instance=ExtResource("5_ybj15")]
+position = Vector2(27, 643)
